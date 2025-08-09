@@ -66,11 +66,14 @@ The application will be available at `http://localhost:4200`
 - `npm run lint` - Run ESLint
 
 
-## Deployment
+## Deployment Dev
 
-1. Build the application:
+Dev Build + Deploy to S3 + Invalidate CloudFront - .github/workflows/angular-dev-build.yml
+
+## Deployment Prod
 
 ```bash
-npm run build
+chmod +x deploy.sh
+./deploy.sh
 ```
 
