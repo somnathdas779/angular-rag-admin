@@ -55,7 +55,7 @@ The application will be available at `http://localhost:4200`
 ![UI Login](./screen/loginv1.png)
 ![UI Dashbaord](./screen/dashboard.png)
 ![UI user](./screen/user.png)
-![UI document](./screen/document.png)
+![UI document](./screen/docv1.png)
 
 ## Available Scripts
 
