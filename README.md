@@ -57,6 +57,14 @@ The application will be available at `http://localhost:4200`
 ![UI user](./screen/user.png)
 ![UI document](./screen/docv2.png)
 
+3. Unit test with coverage
+
+```bash
+npm run test
+```
+
+![UI document](./screen/unittest.png)
+
 ## Available Scripts
 
 - `npm start` - Start development server

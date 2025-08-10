@@ -67,26 +67,7 @@ import { User } from "../../../core/models/user.model";
           </mat-error>
         </mat-form-field>
 
-        <mat-form-field class="w-full">
-          <mat-label>Status</mat-label>
-          <mat-select formControlName="status" required>
-            <mat-option value="active">Active</mat-option>
-            <mat-option value="inactive">Inactive</mat-option>
-          </mat-select>
-          <mat-error *ngIf="userForm.controls.status?.hasError('required')">
-            Status is required
-          </mat-error>
-        </mat-form-field>
 
-        <mat-form-field class="w-full">
-          <mat-label>Department</mat-label>
-          <input matInput formControlName="department" />
-        </mat-form-field>
-
-        <mat-form-field class="w-full">
-          <mat-label>Phone</mat-label>
-          <input matInput formControlName="phone" />
-        </mat-form-field>
       </div>
 
       <div class="flex justify-end space-x-2 mt-6">
@@ -110,7 +91,7 @@ export class UserDialogComponent {
     @Inject(MAT_DIALOG_DATA) public data: User | null
   ) {
     this.userForm = this.fb.group({
-      // name: [data?.name || "", Validators.required],
+      name: [data?.name || "", Validators.required],
       email: [data?.email || "", [Validators.required, Validators.email]],
       role: [data?.role || "", Validators.required],
     });

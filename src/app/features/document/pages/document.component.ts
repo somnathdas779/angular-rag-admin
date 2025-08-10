@@ -162,7 +162,7 @@ import { MatProgressBarModule } from "@angular/material/progress-bar";
     </div>
   `,
 })
-export class ReportsComponent {
+export class DocumentComponent {
   constructor(private tusUploadService: UploadService) {
     //
   }

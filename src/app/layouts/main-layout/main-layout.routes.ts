@@ -16,7 +16,7 @@ export const MAIN_ROUTES: Routes = [
       },
       {
         path: 'documents',
-        loadComponent: () => import('../../features/document/pages/document.component').then(m => m.ReportsComponent)
+        loadComponent: () => import('../../features/document/pages/document.component').then(m => m.DocumentComponent)
       },
       {
         path: '',
