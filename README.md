@@ -1,6 +1,6 @@
 
 
-# RAG Panel
+# RAG Angular Admin Panel
 
 
 RAG admin panel built with Angular 20, Angular Material, and TailwindCSS. Features a responsive design with collapsible sidebar, user management, Upload documents and Manage documents 
