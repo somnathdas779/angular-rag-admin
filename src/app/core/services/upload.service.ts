@@ -10,6 +10,7 @@ export class UploadService {
     return new Promise<string>((resolve, reject) => {
       const upload = new tus.Upload(file, {
         endpoint: `${environment.apiUrl}/files`,
+        chunkSize: 5 * 1024 * 1024, // default 5MB; tune for server
         retryDelays: [0, 1000, 3000, 5000],
         metadata: {
           filename: file.name,
